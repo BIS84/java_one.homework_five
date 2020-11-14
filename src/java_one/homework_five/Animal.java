@@ -6,9 +6,8 @@ public abstract class Animal {
     protected int swim;
     protected float jumpHeight;
 
-    public Animal(String name, int run, float jumpHeight) {
+    public Animal(String name, float jumpHeight) {
         this.name = name;
-        this.run = run;
         this.jumpHeight = jumpHeight;
     }
 
@@ -19,4 +18,8 @@ public abstract class Animal {
     }
 
     public void jumpOverObstacles() { System.out.println(name + " jump over obstacles " + jumpHeight + " m");}
+
+    public String getName() { return name; }
+
+    public int getRun() { return run; }
 }
